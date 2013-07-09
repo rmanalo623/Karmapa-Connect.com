@@ -164,6 +164,10 @@
     /* MARKETING CONTENT
     -------------------------------------------------- */
 
+    .marketing {
+      background: #611315;
+      margin-bottom: -40px;
+    }
     /* Center align the text within the three columns below the carousel */
     .marketing .span4 {
       text-align: center;
@@ -202,6 +206,14 @@
     .featurette-image.pull-right {
       margin-left: 40px;
       margin-right: 50px;
+      position: relative;
+      top: -30px;
+    }
+    .featurette-image p {
+      position: relative;
+      margin-left: 10px;
+      color: white;
+      top: -34px;
     }
 
     /* Thin out the marketing headings */
