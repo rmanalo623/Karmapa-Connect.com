@@ -196,6 +196,8 @@
     .marketing {
       background: #611315;
       margin-bottom: -40px;
+      margin-left: -20px;
+      margin-right: -20px;
     }
     /* Center align the text within the three columns below the carousel */
     .marketing .span4 {
@@ -334,9 +336,14 @@
         margin: -20px;
       }
 
+      .container {
+        width: auto;
+      }
+
       .carousel {
         margin-left: -20px;
         margin-right: -20px;
+        margin-bottom: 0px;
       }
       .carousel .container {
         background: url('/img/750x416.jpg');
@@ -344,14 +351,14 @@
         height: 416px;
       }
       .carousel .item {
-        height: 300px;
+        height: 416px;
       }
       .carousel img {
         height: 473px;
       }
       .carousel-caption {
-        width: 65%;
-        padding: 0 70px;
+        width: 35%;
+        /*padding: 0 70px;*/
         margin-top: 100px;
       }
       .carousel-caption h1 {
@@ -361,9 +368,27 @@
       .carousel-caption .btn {
         font-size: 18px;
       }
+      .carousel-toolbar .carousel-toolbar-facebook {
+        width: 35%;
+        text-align: center;
+      }
+      .carousel-toolbar .carousel-toolbar-facebook p{
+        position: absolute;
+        top: 60px;
+      }
+      .carousel-toolbar .carousel-toolbar-facebook img {
+        width: 35%;
+        height: 51px;
+        display: block;
+        margin: 0 auto;
+      }
 
       .marketing .span4 + .span4 {
         margin-top: 40px;
+      }
+
+      .featurette {
+
       }
 
       .featurette-heading {
@@ -381,9 +406,27 @@
         height: 309px;
         margin: ;
       }
+      .carousel-caption {
+        width: 35%;
+        margin-top: 60px;
+      }
+      .carousel-toolbar {
+        margin-top: -20px;
+      }
       .carousel .container {
         background: url('/img/550x309.jpg');
         width: 550px;
         height: 309px;
+      }
+      .featurette {
+        padding-top: 70px;
+        position: relative;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        max-width: 40%;
+        position: relative;
+        top: 120px;
       }
     }
