@@ -208,6 +208,14 @@
       font-size: 25px;
       font-weight: normal;
     }
+    .carousel-transparent-container {
+      opacity: 0.1;
+      background: black;
+      width: 340px;
+      height: 145px;
+      position: absolute;
+      top: 290px;
+    }
 
     /* MARKETING CONTENT
     -------------------------------------------------- */
