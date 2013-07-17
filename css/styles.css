@@ -80,6 +80,14 @@
       margin-top: 10px;
     }
 
+    .navbar .navbar-inner .brand {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .navbar .navbar-inner .brand-small {
+      font-size: 15px;
+    }
 
 
     /* CUSTOMIZE THE CAROUSEL
@@ -122,6 +130,9 @@
       position: relative;
       max-width: 50px;
       margin-left: 20px;
+    }
+    .carousel-toolbar p {
+      font-size: 15px;
     }
     /*.carousel-toolbar img {
       width: 50px;
@@ -189,6 +200,14 @@
     .carousel-caption .btn {
       margin-top: 10px;
     }
+    .carousel-caption h1 {
+      font-size: 50px;
+      font-weight: normal;
+    }
+    .carousel-caption .lead {
+      font-size: 25px;
+      font-weight: normal;
+    }
 
     /* MARKETING CONTENT
     -------------------------------------------------- */
@@ -205,6 +224,7 @@
     }
     .marketing h2 {
       font-weight: normal;
+      font-size: 50px;
     }
     .marketing .span4 p {
       margin-left: 10px;
@@ -245,6 +265,8 @@
       margin-left: 10px;
       color: white;
       top: -34px;
+      font-size: 15px;
+      font-style: italic;
     }
 
     /* Thin out the marketing headings */
@@ -253,11 +275,13 @@
       line-height: 1;
       letter-spacing: -1px;
       color: white;
-      max-width: 390px;
+      max-width: 700px;
     }
 
     .featurette .lead-quote {
       margin-left: 100px;
+      font-size: 25px;
+      font-weight: normal;
     }
 
 
@@ -285,6 +309,7 @@
       .featurette-image.pull-right {
         display: block;
         max-width: 40%;
+        margin-top: -180px;
       }
     }
 
@@ -326,6 +351,7 @@
       .featurette-image.pull-right {
         display: block;
         max-width: 40%;
+        margin-top: -180px;
       }
     }
 
