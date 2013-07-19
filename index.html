@@ -89,8 +89,8 @@
 
       <!-- START THE FEATURETTES -->
       <div class="featurette">
-        <h2 class="featurette-heading">"Protect the earth, live simply, and act with compassion. Our entire future depends on this."</h2>
-        <p class="lead lead-quote">- His Holiness the 17th Karmapa</p>
+        <h2 class="featurette-heading" data-featurette="quote">"Protect the earth, live simply, and act with compassion. Our entire future depends on this."</h2>
+        <p class="lead lead-quote" data-featurette="quote-author">- His Holiness the 17th Karmapa</p>
         <div class="featurette-image pull-right">
           <img src="/img/heartisnoble.png" alt="" title="" />
           <p class="pull-right">Buy the <br /> new book!</p>
@@ -136,8 +136,50 @@
       !function ($) {
         $(function(){
           // carousel demo
-          $('#myCarousel').carousel()
-        })
+          $('#myCarousel').carousel();
+          setInterval(function(){
+            var objArray = new Array();
+            var obj1 = {
+              quote: "Inside each of us there is a noble heart...When we clear away all that blocks it, this heart can change the world.",
+              signature: "His Holiness the 17th Karmapa"
+            };
+            var obj2 = {
+              quote: "The 17th Karmapa\'s sincere and benefical activities, performed with the highest intentions, continue to expand.",
+              signature: "His Holiness the Dalai Lama"
+            };
+            var obj3 = {
+              quote: "Protect the earth, live simply, and act with compassion. Our entire future depends on this.",
+              signature: "His Holiness the 17th Karmapa"
+            };
+            objArray[0] = obj1;
+            objArray[1] = obj2;
+            objArray[2] = obj3;
+            var quotes = $.parseJSON(JSON.stringify(objArray));
+            // var key = Math.floor((Math.random()*3)+1);
+            var key = getRand();
+            key = key[0];
+            if (typeof(quotes[key]) !== 'undefined') {
+              $('[data-featurette="quote"]').fadeOut('normal', function(){
+                $('[data-featurette="quote"]').fadeIn(500).html(quotes[key].quote);
+                $('[data-featurette="quote-author"]').fadeIn(500).html('- '+quotes[key].signature);    
+              });
+              
+            }
+            
+          }, 10000);
+
+          var getRand = (function() {
+              var nums = [0,1,2];
+              var current = [];
+              function rand(n) {
+                  return (Math.random() * n)|0;
+              }
+              return function() {
+                if (!current.length) current = nums.slice();
+                return current.splice(rand(current.length), 1);
+              }
+          }());
+        });
       }(window.jQuery)
     </script>
   </body>
