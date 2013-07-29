@@ -29,6 +29,30 @@
       color: white;
     }
 
+    blockquote {
+      font-family: 'Gentium Book Basic', serif;
+      color: white;
+      border: none;
+      font-weight: normal;
+      line-height: 1;
+      letter-spacing: 1px;
+      color: white;
+      max-width: 900px;
+      font-size: 50px;
+      margin-left: 20px;
+    }
+
+    blockquote:before {
+      content: "\201C"; 
+      float: left;
+      margin-right: 10px;
+    }
+
+    blockquote cite:before {
+      content: "\201D \2009";
+      color: white;
+    }
+
     .container {
       width: auto;
     }
@@ -291,7 +315,12 @@
         font-size: 18px;
       }
 
-      .featurette h2 {
+      /*.container .featurette {
+        margin: 0;
+        padding-top: 0;
+      }*/
+
+      .featurette h2, .featurette blockquote {
         font-size: 40px;
       }
 
@@ -315,6 +344,23 @@
         font-size: 14px;
       }
 
+
+      .carousel-toolbar-facebook {
+        max-width: 20%;
+      }
+
+      .carousel-toolbar-youtube {
+        max-width: 20%;
+        position: static;
+        margin-top: -106px;
+      }
+
+      .carousel-toolbar-flag {
+        max-width: 20%;
+        position: static;
+        margin-top: -106px;
+      }
+
       .navbar .navbar-inner a.brand-small {
         display: none;
       }
@@ -323,7 +369,7 @@
         text-decoration: none;
       }
 
-      .featurette h2 {
+      .featurette h2, .featurette blockquote {
         display: block;
         font-size: 25px;
         position: absolute;
