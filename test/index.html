@@ -36,7 +36,7 @@
 
         <div class="navbar navbar-inverse">
           <div class="navbar-inner">
-            <a class="brand" href="http://kagyuoffice.org/">karmapa connect</a>
+            <a class="brand" href="https://www.facebook.com/karmapa">karmapa connect</a>
             <div class="pull-right">
               <a class="brand brand-small" href="http://kagyuoffice.org/" title="Connect on the Karmapa website">visit the main site</a>
             </div>
@@ -47,7 +47,7 @@
     </div><!-- /.navbar-wrapper -->
 
     <div class="bg-image">
-      <img src="/img/main1800.png" alt="Karmapa Connect" title="Karmapa Connect">
+      <img src="/img/1800x1000.png" alt="Karmapa Connect" title="Karmapa Connect">
       <div class="carousel-caption">
         <h1>Connect</h1>
         <p class="lead">with the Teachings of His Holiness the 17th Karmapa<br /> Ogyen Trinley Dorje</p>
@@ -95,8 +95,15 @@
           <p class="pull-right featurette-book">Buy the <br /> new book!</p>
         </a>
         <div class="media-body">
-          <h2 class="media-heading" data-featurette="quote">"Protect the earth, live simply, and act with compassion. Our entire future depends on this."</h2>
+          <!-- <h2 class="media-heading" data-featurette="quote">"Protect the earth, live simply, and act with compassion. Our entire future depends on this."</h2>
+          <p class="media-heading media-heading-quote" data-featurette="quote-author">- His Holiness the 17th Karmapa</p> -->
+
+          <blockquote class="media-heading" data-featurette="quote">
+            Protect the earth, live simply, and act with compassion. Our entire future depends on this.
+            <cite></cite>
+          </blockquote>
           <p class="media-heading media-heading-quote" data-featurette="quote-author">- His Holiness the 17th Karmapa</p>
+          
         </div>
       </div>
 
@@ -114,7 +121,7 @@
           setInterval(function(){
             var objArray = new Array();
             var obj1 = {
-              quote: "Inside each of us there is a noble heart...When we clear away all that blocks it, this heart can change the world.",
+              quote: "Inside each of us there is a noble heart...When we clear away all that blocks it, we can change the world.",
               signature: "His Holiness the 17th Karmapa"
             };
             var obj2 = {
@@ -133,8 +140,8 @@
             var key = getRand();
             key = key[0];
             if (typeof(quotes[key]) !== 'undefined') {
-              $('[data-featurette="quote"]').fadeOut('normal', function(){
-                $('[data-featurette="quote"]').fadeIn(500).html('"' + quotes[key].quote + '"');
+              $('[data-featurette="quote"]').fadeOut('slow', function(){
+                $('[data-featurette="quote"]').fadeIn(500).html(quotes[key].quote + '<cite></cite>');
                 $('[data-featurette="quote-author"]').fadeIn(500).html('- '+quotes[key].signature);    
               });
               
