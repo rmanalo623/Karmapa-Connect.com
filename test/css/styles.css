@@ -38,7 +38,7 @@
       letter-spacing: 1px;
       color: white;
       max-width: 900px;
-      font-size: 50px;
+      font-size: 45px;
       margin-left: 20px;
     }
 
@@ -154,7 +154,7 @@
       position: absolute;
       top: 100px;
       margin-left: 40px;
-      max-width: 330px;
+      max-width: 50%;
     }
 
     .carousel-caption h1 {
@@ -218,6 +218,11 @@
       top: 260px;
     }
 
+    .carousel-buttons {
+      position: absolute;
+      top: 280px;
+    }
+
     .bg-image {
       position: relative;
     }
@@ -244,11 +249,11 @@
 
     .featurette {
       position: absolute;
-      top: 510px;
+      top: 550px;
       background: #611315;
       width: 100%;
-      padding-bottom: 60px;
-      padding-top: 100px;
+      padding-bottom: 260px;
+      padding-top: 20px;
     }
 
     .featurette img {
@@ -256,34 +261,64 @@
     }
 
     .featurette-image {
-      margin-top: -170px;
-      margin-bottom: 100px;
+      margin-top: -160px;
+      margin-bottom: 120px;
       
     }
 
     .featurette h2{
       font-weight: normal;
-      line-height: 1;
+      line-height: 1.25;
       letter-spacing: 1px;
       color: white;
-      max-width: 900px;
-      font-size: 50px;
+      max-width: 870px;
+      font-size: 52px;
     }
 
     .media-heading {
       margin-left: 40px;
+      margin-right: 40px;
     } 
 
     .media-heading-quote {
-      margin-left: 300px;
+      margin-left: 225px;
       font-size: 25px;
       font-weight: normal;
       padding-top: 20px;
+      margin-right: 73px;
+      background: red;
     } 
+
+    .media-quote-container {
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    .media-quote-anchor {
+      margin-left: 25px;
+      margin-right: 30px;
+    }
+
+    .media-heading-cite {
+      font-size: 25px;
+      margin-left: 20%;
+    }
+    
+
+    .featurette-caption {
+      padding: 0 10px;
+      position: relative;
+      top: 117px;
+      line-height: 1.2;
+      margin-left: 100px;
+      font-style: italic;
+    }
 
     .featurette-book {
       position: absolute;
-      top: 216px;
+      top: 160px;
       right: 15px;
       font-style: italic;
     }
@@ -293,107 +328,93 @@
     -------------------------------------------------- */
 
     @media (max-width: 1290px) {
-      .carousel-caption {
-        width: 30%;
-      }
-    }
-
-    @media (min-width: 768px) and (max-width: 980px) {
-      .carousel-caption h1 {
-        font-size: 54px;
-      }
       
     }
 
+    @media (min-width: 768px) and (max-width: 980px) {
+
+
+    }
 
     @media (max-width: 767px) {
+      .carousel-caption {
+        position: static;
+        max-width: 100%;
+      }
+
       .carousel-caption h1 {
-        font-size: 54px;
+        font-size: 55px;
       }
 
-      .carousel-caption .lead, .carousel-caption .btn {
-        font-size: 18px;
+      .container .carousel-buttons {
+        position: static;
+        margin-left: 20px;
+        width: 75%;
       }
 
-      /*.container .featurette {
-        margin: 0;
-        padding-top: 0;
-      }*/
-
-      .featurette h2, .featurette blockquote {
-        font-size: 40px;
+      .container .carousel-buttons li {
+        float: left;
+        width: 18%;
       }
 
-      .media-heading-quote {
-        font-size: 25px;
-        margin-left: 100px;
+      .media-heading2 {
+        font-size: 20px;
+      }
+
+      .media-heading-cite {
+        font-size: 15px;
       }
 
     }
 
     @media (max-width: 525px) {
-      .carousel-caption {
-        width: 50%;
-      }
-
-      .carousel-caption h1 {
-        font-size: 44px;
-      }
-
-      .carousel-caption .lead, .carousel-caption .btn {
-        font-size: 14px;
-      }
-
-
-      .carousel-toolbar-facebook {
-        max-width: 20%;
-      }
-
-      .carousel-toolbar-youtube {
-        max-width: 20%;
-        position: static;
-        margin-top: -106px;
-      }
-
-      .carousel-toolbar-flag {
-        max-width: 20%;
-        position: static;
-        margin-top: -106px;
+      .navbar .navbar-inner .brand {
+        font-size: 20px;
+        font-weight: regular;
+        left: 150px;
       }
 
       .navbar .navbar-inner a.brand-small {
         display: none;
       }
 
-      .media .featurette a p{
-        text-decoration: none;
+
+      .carousel-caption h1 {
+        font-size: 40px;
       }
 
-      .featurette h2, .featurette blockquote {
-        display: block;
-        font-size: 25px;
-        position: absolute;
-        top: 10px;
-      }
-
-      .media-heading-quote {
-        font-size: 15px;
-        position: absolute;
-        top: 130px;
-        padding: 0px;
-        margin: 0;
-        left: 150px;
-      }
-
-      .media .pull-right {
+      .media-body {
+        width: 100%;
         position: static;
-        margin-top: 70px;
-        margin-left: 200px;
       }
-      
-      .pull-right .featurette-book {
+
+      .media-quote-anchor {
+        float: none;
+        position: static;
+      }
+
+      .media-heading2 {
+        font-size: 30px;
+        margin-top: 30px;
+      }
+
+      .featurette-caption {
+        display: none;
+        position: static;
         margin: 0;
         padding: 0;
-        float: none;
+        margin-left: -280px;
+        width: 20%;
       }
+
+      .container .carousel-buttons {
+        width: 75%;
+        margin-left: 20px;
+      }
+
+      .container .carousel-buttons li {
+        float: left;
+        width: 28%;
+      }
+      
     }
